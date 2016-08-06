@@ -27,6 +27,10 @@
             {
                 "command": "copy 3",
                 "key": "ctrl+3"
+            },
+            {
+                "command": "paste 3",
+                "key": "alt+3"
             }
         ]       
     },
