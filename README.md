@@ -25,7 +25,6 @@ In Visual Studio code Ctrl+1, Ctrl+2, Ctrl+3 are used to split the editor window
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
 
 ### 0.5.0
 
