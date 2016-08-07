@@ -17,15 +17,16 @@ export function activate(context: vscode.ExtensionContext) {
     let pasteCommands = [];
     for (let index = 0; index < keys; index++) { //build the 10 copy commands. Can't pass data into commands to this seems like the best way?
         let copyName = 'copy ' + index;
+        let pasteName = 'paste ' + index;
+
         let copyCmd = vscode.commands.registerCommand(copyName, () => {                    
             copyHolder.saveHighlight(copyName);            
             vscode.window.showInformationMessage('Hello ' + copyHolder.getItem(copyName));
         })
         copyCommands.push(copyCmd);
-
-        let pasteName = 'paste ' + index;
+        
         let pasteCmd = vscode.commands.registerCommand(pasteName, () => {                    
-            paste.pasteText();        
+            paste.pasteText(copyName, copyHolder);        
             vscode.window.showInformationMessage('Hello ' + copyHolder.getItem(pasteName));
         })
         pasteCommands.push(copyCmd);

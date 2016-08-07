@@ -1,4 +1,4 @@
-import * as vscode from 'vscode';
+import { window } from 'vscode';
 
 
 export class Copy{
@@ -10,7 +10,7 @@ export class Copy{
 
 
     public saveHighlight(key: string){
-         var editor = vscode.window.activeTextEditor;
+         var editor = window.activeTextEditor;
             if (!editor) {
                 return; // No open text editor
             }
