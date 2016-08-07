@@ -1,65 +1,33 @@
-# sccopy README
+# SCCopy README
 
-This is the README for your extension "sccopy". After writing up a brief description, we recommend including the following sections.
+SCCopy is a copy paste manager. SCCopy uses the the same hotkey structure that StarCraft 2 uses for control groups.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Use Ctrl + any number to copy an item.
 
-For example if there is an image subfolder under your extension project workspace:
+Use Alt + any number to paste that item.
+>In the future I want to change this to double tabbing the number, or press the number then tab like a code snippet. 
 
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+> animations coming soon!!
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+Visual Studio?
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+>Will add some settings
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+In Visual Studio code Ctrl+1, Ctrl+2, Ctrl+3 are used to split the editor windows. This extension overwrites those hotkeys... sorry. 
 
 ## Release Notes
 
 Users appreciate release notes as you update your extension.
 
-### 1.0.0
+### 0.5.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on OSX or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on OSX or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (OSX) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Initial release of SCCopy.
+Supports Copy and Paste.

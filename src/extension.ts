@@ -20,14 +20,12 @@ export function activate(context: vscode.ExtensionContext) {
         let pasteName = 'paste ' + index;
 
         let copyCmd = vscode.commands.registerCommand(copyName, () => {                    
-            copyHolder.saveHighlight(copyName);            
-            vscode.window.showInformationMessage('Hello ' + copyHolder.getItem(copyName));
+            copyHolder.saveHighlight(copyName);                      
         })
         copyCommands.push(copyCmd);
         
         let pasteCmd = vscode.commands.registerCommand(pasteName, () => {                    
-            paste.pasteText(copyName, copyHolder);        
-            vscode.window.showInformationMessage('Hello ' + copyHolder.getItem(pasteName));
+            paste.pasteText(copyName, copyHolder);                  
         })
         pasteCommands.push(copyCmd);
 
