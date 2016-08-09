@@ -4,12 +4,13 @@
 import * as vscode from 'vscode';
 import {Copy} from './copy';
 import { Paste } from './paste';
+import { StatusBarHandler } from './statusBarHandler';
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
 
     var copyHolder = new Copy;
-
+    var _statusBarHandler = new StatusBarHandler;
     var paste = new Paste;
 
     let keys = 9;
@@ -20,7 +21,9 @@ export function activate(context: vscode.ExtensionContext) {
         let pasteName = 'paste ' + index;
 
         let copyCmd = vscode.commands.registerCommand(copyName, () => {                    
-            copyHolder.saveHighlight(copyName);                      
+            copyHolder.saveHighlight(copyName);    
+            _statusBarHandler.updateStatusBar(copyHolder);                  
+
         })
         copyCommands.push(copyCmd);
         

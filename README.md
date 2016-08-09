@@ -26,7 +26,7 @@ In Visual Studio code Ctrl+1, Ctrl+2, Ctrl+3 are used to split the editor window
 ## Release Notes
 
 
+
 ### 0.5.0
 
-Initial release of SCCopy.
 Supports Copy and Paste.
