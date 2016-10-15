@@ -11,7 +11,7 @@ Use Alt + (any number) to paste that item.
 
 >In the future I want to change this to double tabbing the number, or press the number then tab like a code snippet. VScode extension don't directly support this kinda stuff, so not sure how I'm going to do this. Hit me up if you have an idea.  
 
-![Use Extension]https://raw.githubusercontent.com/CalebOuellette/SCCopy/master/demo.gif)
+![Use Extension](https://raw.githubusercontent.com/CalebOuellette/SCCopy/master/demo.gif)
 
 ## Requirements
 
