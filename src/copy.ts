@@ -5,11 +5,11 @@ export class Copy {
 
     constructor() { }
 
-    private items: Object = {};
-
+    private items: Object = {};//Holds the copied data. Should implment a class.
 
 
     public saveHighlight(key: string) {
+        //Called to save a highlight
         var editor = window.activeTextEditor;
         if (!editor) {
             return; // No open text editor
@@ -40,7 +40,13 @@ export class Copy {
         let outText: string = 'SCC[';
 
         for (let item in this.items) {
-            outText = outText + item + ':' + this.items[item].substring(0, 7) + ' ';
+            outText = outText + item + ':'
+            if(this.items[item].length > 6){
+                outText = outText + this.items[item].substring(0, 6) + '... ';
+            }else{
+                outText = outText  + this.items[item];
+            }
+            
         }
         outText = outText + ']';
 

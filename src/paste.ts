@@ -10,7 +10,7 @@ export class Paste {
     //which now seems overly compilcated and is not in .ts :(
 
     public pasteText(key: string, copyObj: Copy): void {
-       
+
         let pos: Selection = window.activeTextEditor.selection;
         this.applyEdit(pos, copyObj.getItem(key));
 
@@ -19,17 +19,20 @@ export class Paste {
     private applyEdit(coords, content): void {
         var vsDocument = window.activeTextEditor.document;
         var edit = this.setEditFactory(vsDocument.uri, coords, content);
-        workspace.applyEdit(edit);
+        workspace.applyEdit(edit).then(() => {
+            //move cursor to end of highlight
+            let cursorPos = window.activeTextEditor.selection.active;
+            let move = new Selection(cursorPos, cursorPos);
+            window.activeTextEditor.selection = move;
+        })
     }
 
-  
+
     private setEditFactory(uri: Uri, coords, content): WorkspaceEdit {
         var workspaceEdit = new WorkspaceEdit();
-        let edit =  new TextEdit(coords, content);
+        let edit = new TextEdit(coords, content);
 
         workspaceEdit.set(uri, [edit]);
         return workspaceEdit;
     }
-
-
 }
