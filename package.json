@@ -2,7 +2,7 @@
     "name": "sccopy",
     "displayName": "SCCopy",
     "description": "A copy paste manager, inspired by SC2.",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "publisher": "CalebOuellette",
     "icon": "icon.png",
     "engines": {
@@ -15,7 +15,7 @@
         "*"
     ],
     "main": "./out/src/extension",
-    "contributes": {        
+    "contributes": {
         "keybindings": [
             {
                 "command": "copy 1",
@@ -57,7 +57,6 @@
                 "command": "copy 0",
                 "key": "ctrl+0"
             },
-
             {
                 "command": "paste 1",
                 "key": "alt+1"
@@ -98,7 +97,7 @@
                 "command": "paste 0",
                 "key": "alt+0"
             }
-        ]       
+        ]
     },
     "scripts": {
         "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
