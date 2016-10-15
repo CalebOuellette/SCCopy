@@ -25,7 +25,7 @@ Visual Studio Code!
 
 In Visual Studio code Ctrl+1, Ctrl+2, Ctrl+3 are used to split the editor windows. This extension overwrites those hotkeys... sorry. 
 
-So this copy paste stuff only works inside VScode... This realy caught me off guard... In hindsight this is really obvious. Possible going to turn this into a system app if I like using this pattern of copy/paste. 
+So this copy paste stuff only works inside VScode... This realy caught me off guard... In hindsight this is really obvious. Possibly going to turn this into a system app if I like using this pattern of copy/paste. 
 
 ## Release Notes
 
