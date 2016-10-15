@@ -29,8 +29,11 @@ So this copy paste stuff only works inside VScode... This realy caught me off gu
 
 ## Release Notes
 
+1.0.0 Supports basic functionallity of 
+Use Ctrl + (any number) to copy an item.
+Use Alt + (any number) to paste that item.
 
 
-### 0.5.0
+### 1.0.0
 
 Supports Copy and Paste.
