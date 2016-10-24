@@ -1,4 +1,4 @@
-# SCCopy README
+# SCCopy
 A Visual Studio Code Extention.
 
 SCCopy is a copy paste manager. SCCopy uses the the same hotkey structure that StarCraft 2 uses for control groups.
