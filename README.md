@@ -19,7 +19,7 @@ Visual Studio Code!
 
 ## Extension Settings
 
->Will add some settings... maybe.
+Show/Hide the bottom status bar using scc.setting.showStatusBar = true/false in your config file.
 
 ## Known Issues
 
