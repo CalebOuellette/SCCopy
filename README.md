@@ -37,3 +37,8 @@ Use Alt + (any number) to paste that item.
 ### 1.0.0
 
 Supports Copy and Paste.
+
+### 1.0.1
+
+Added Setting
+scc.setting.showStatusBar = true/false

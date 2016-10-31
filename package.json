@@ -2,15 +2,16 @@
     "name": "sccopy",
     "displayName": "SCCopy",
     "description": "A copy paste manager, inspired by SC2.",
-    "version": "1.0.0",
-    "publisher": "CalebOuellette",
+    "version": "1.0.1",
+    "publisher": "calebouellette",
     "icon": "icon.png",
     "engines": {
         "vscode": "^1.0.0"
     },
     "categories": [
         "Other",
-        "Productivity"
+        "Snippets",
+        "Keymaps"
     ],
     "activationEvents": [
         "*"
