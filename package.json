@@ -2,7 +2,7 @@
     "name": "sccopy",
     "displayName": "SCCopy",
     "description": "A copy paste manager, inspired by SC2.",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "publisher": "calebouellette",
     "icon": "icon.png",
     "engines": {
