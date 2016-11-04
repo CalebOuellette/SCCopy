@@ -10,8 +10,7 @@
     },
     "categories": [
         "Other",
-        "Snippets",
-        "Keymaps"
+        "Snippets"
     ],
     "activationEvents": [
         "*"
